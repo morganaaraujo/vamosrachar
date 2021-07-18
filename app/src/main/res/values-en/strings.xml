@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lets Share!</string>
+    <string name="vamos_rachar">Lets Share!</string>
+    <string name="texto_informativo_valor">\Each person pays \</string>
+    <string name="aviso_TTS_ativado">TTS activated...</string>
+    <string name="descricao_valor_conta">Inform the bill cost in the field beside</string>
+    <string name="descricao_numero_pessoas">Inform the number of people to share the bill cost in the field beside</string>
+    <string name="descricao_ouvir_valor_pago">Click to hear the amount to be paid</string>
+    <string name="descricao_compartilhar_valor_pago">Click to share the amount to be paid</string>
+</resources>

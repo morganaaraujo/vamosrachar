@@ -106,13 +106,13 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
         if (view == share) {
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            intent.putExtra(Intent.EXTRA_TEXT, "O valor da conta por pessoa é de " + tvResultado.getText().toString());
+            intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.texto_informativo_valor) + tvResultado.getText().toString());
             startActivity(intent);
 
         }
         if (view == tocar) {
             if (ttsPlayer != null) {
-                ttsPlayer.speak("O valor da conta por pessoa é de " + tvResultado.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, "ID1");
+                ttsPlayer.speak(getString(R.string.texto_informativo_valor) + tvResultado.getText().toString(), TextToSpeech.QUEUE_FLUSH, null, "ID1");
             }
 
         }
@@ -122,11 +122,9 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
     public void onInit(int initStatus) {
         //checando inicialização
         if (initStatus == TextToSpeech.SUCCESS) {
-            Toast.makeText(this, "TTS ativado...",
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.aviso_TTS_ativado), Toast.LENGTH_LONG).show();
         } else if (initStatus == TextToSpeech.ERROR) {
-            Toast.makeText(this, "Se, TTS habilitado...",
-                    Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Se, TTS habilitado...", Toast.LENGTH_LONG).show();
         }
     }
 }

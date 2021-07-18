@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Vamos Rachar!</string>
+    <string name="vamos_rachar">Vamos Rachar!</string>
+    <string name="texto_informativo_valor">\O valor da conta por pessoa é de \</string>
+    <string name="aviso_TTS_ativado">TTS ativado...</string>
+    <string name="descricao_valor_conta">Informe o valor total da conta, ao lado</string>
+    <string name="descricao_numero_pessoas">Informe o número de pessoas pra dividir a conta, ao lado</string>
+    <string name="descricao_ouvir_valor_pago">Clique para ouvir o valor a ser pago</string>
+    <string name="descricao_compartilhar_valor_pago">Clique para compartilhar o valor a ser pago</string>
 </resources>
